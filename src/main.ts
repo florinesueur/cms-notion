@@ -25,7 +25,7 @@ export async function run() {
         required: true
       })
       const destinationFilePath = path.join(
-        process.env.GITHUB_WORKSPACE,
+        process.env.github.workspace,
         destinationFolder,
         `${fillTemplate(fileNameFormat, propEntries)}.md`
       )

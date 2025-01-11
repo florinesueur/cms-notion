@@ -15,14 +15,10 @@ inputs:
     description: the name of the property that refers to when the article will be published
     required: true
     default: date
-  property-draft:
-    description: the name of the property that refers if an article is still in draft mode
+  property-status:
+    description: the name of the property that refers if an article is still in pousse mode
     required: true
-    default: draft
-  property-archived:
-    description: the name of the property that refers if an article is still in archived mode
-    required: true
-    default: archived
+    default: status
   front-matter-delimiter:
     description: the delimiter characters for front matter in markdown files
     required: true

@@ -12994,9 +12994,9 @@ async function getPosts(notion) {
                     }
                 },
                 {
-                    property: core.getInput('property-status', { required: true }),
-                    status: {
-                        equals: "En pousse"
+                    property: core.getInput('property-draft', { required: true }),
+                    checkbox: {
+                        equals: false
                     }
                 }
             ]

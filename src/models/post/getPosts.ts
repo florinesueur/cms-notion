@@ -11,9 +11,9 @@ export async function getPosts(notion: any) {
           }
         },
         {
-          property: core.getInput('property-draft', { required: true }),
-          checkbox: {
-            equals: false
+          property: core.getInput('property-status', { required: true }),
+          status: {
+            equals: "En pousse"
           }
         }
       ]
